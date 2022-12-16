@@ -1,0 +1,14 @@
+Pour visualiser les maquettes à la taille d'un vrai site, n'hésitez pas à zoomer les images à 100%
+
+
+Les deux polices d'écriture utilisées sont :
+- Merriweather
+- Open sans
+
+
+La palette de couleurs est composée de :
+--main-white: #dddddd;
+--shade-white: #d3d3d3;
+--main-black: #181818;
+--main-yellow: #e6d28c;
+--dark-yellow: #f4cb38;

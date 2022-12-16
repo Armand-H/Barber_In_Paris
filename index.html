@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Un barbier traditionnel en plein Paris ! Nous vous recevons dans un cadre 
+    à l'ancienne pour s'occuper de votre barbe et de vos cheveux."
+    />
+    <title>
+      Le Barbier de Paris - Spécialiste de la barbe et des coupes de cheveux
+      pour homme.
+    </title>
+    <link
+      rel="shortcut icon"
+      href="ressources/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="home">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">Nos valeurs</a></li>
+          <li><a href="#prestations">Prestations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="nav-toggler"
+          aria-label="Ouvrir et fermer le menu en mode mobile"
+        >
+          <img src="ressources/hamburger.svg" alt="" />
+        </button>
+      </nav>
+      <div class="hero">
+        <h1 class="main-title">Votre barbier traditionnel</h1>
+        <p class="main-subtitle">Rasoirs, peignes et savoir faire</p>
+        <a href="#prestations" class="hero-link hero-link-1">
+          <span>Prestations</span>
+          <img src="ressources/pack/010-electric.svg" alt="" />
+        </a>
+        <a href="#contact" class="hero-link hero-link-2">
+          <span>Contact</span>
+          <img src="ressources/pack/003-location-pin.svg" alt="" />
+        </a>
+
+        <a href="#about" class="push-down-hero">
+          <img
+            src="ressources/chevron-down.svg"
+            alt="chevron navigation vers le bas"
+          />
+        </a>
+      </div>
+    </header>
+    <!-- About section -->
+    <main>
+      <section class="about" id="about">
+        <h2 class="section-title">
+          <span>Un style intemporel</span>
+          <img src="ressources/pack/004-barber-1.svg" alt="" />
+        </h2>
+        <p class="section-subtitle">Patience et expertise à votre service</p>
+        <div class="container about-content">
+          <div class="about-text">
+            <h3 class="heading-h3">
+              <img src="ressources/pack/024-shave.svg" alt="" />
+              <span>VOUS ÊTES ENTRE DE BONNES MAINS</span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, ex repellat. Quas, illum beatae nulla dolorum amet,
+              ullam ea modi molestias commodi voluptatem aperiam esse.
+            </p>
+            <h3 class="heading-h3">
+              <img src="ressources/pack/001-barber.svg" alt="" />
+              <span>L'ART DE TAILLER UNE BARBE</span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et,
+              adipisci.
+            </p>
+          </div>
+          <div class="about-slideshow">
+            <div class="slideshow-img-container">
+              <img
+                src="ressources/slide-1.jpg"
+                alt="coiffeur coupant des cheveux avec un peigne et un ciseau"
+                class="active"
+              />
+              <img
+                src="ressources/slide-2.jpg"
+                alt="coiffeur rasnat une nuque"
+              />
+              <img
+                src="ressources/slide-3.jpg"
+                alt="coiffeur utilisant un rasoir électrique"
+              />
+            </div>
+            <div class="dots fade-slide-dots">
+              <button
+                aria-label="Montrer l'image 1"
+                data-fadeIndex="1"
+                class="dot active"
+              ></button>
+              <button
+                aria-label="Montrer l'image 2"
+                data-fadeIndex="2"
+                class="dot"
+              ></button>
+              <button
+                aria-label="Montrer l'image 3"
+                data-fadeIndex="3"
+                class="dot"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Prestations -->
+
+      <section class="prestations" id="prestations">
+        <h2 class="section-title">
+          <span> Nos Prestations </span>
+          <img src="ressources/pack/008-comb.svg" alt="" />
+        </h2>
+        <p class="section-subtitle">À la carte</p>
+
+        <div class="container prestations-container">
+          <div class="prestations-card">
+            <h3 class="prestations-category-title">
+              <span>Le visage</span>
+              <img src="ressources/pack/002-barber-pole.svg" alt="" />
+            </h3>
+            <ul class="prestations-list">
+              <li>
+                <h4 class="heading-h4">LA MOUSTACHE - 8€</h4>
+                <p>
+                  <strong>Soins</strong> et
+                  <strong>taille de la moustache</strong>.
+                </p>
+                <p><em>Durée &asymp; 30 minutes</em>.</p>
+              </li>
+              <li>
+                <h4 class="heading-h4">TAILLE SIMPLE - 12€</h4>
+                <p>
+                  Taille complète de la <strong>barbe</strong>, finitions
+                  <strong>cou</strong>, <strong>oreilles</strong>,
+                  <strong>nez</strong>.
+                </p>
+                <p><em>Durée &asymp; 30 minutes</em>.</p>
+              </li>
+              <li>
+                <h4 class="heading-h4">LE COUPE-CHOU - 25€</h4>
+                <p>
+                  Rasage classique <strong>traditionnel</strong> au
+                  <strong>coupe choux</strong>(rasoir droit).
+                </p>
+                <p>
+                  <em> Durée &asymp; 45 minutes. </em>
+                </p>
+              </li>
+              <li>
+                <h4 class="heading-h4">SOIN COMPLET - 35€</h4>
+                <p>
+                  <strong>Serviettes chaudes</strong>, <strong>soins</strong>,
+                  <strong>huiles</strong> et <strong>taille complète.</strong>
+                </p>
+                <p><em>Durée &asymp; 50 minutes.</em></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="prestations-card">
+            <h3 class="prestations-category-title">
+              <span>LA COUPE</span>
+              <img src="ressources/pack/023-scissors.svg" alt="" />
+            </h3>
+            <ul class="prestations-list">
+              <li>
+                <h4 class="heading-h4">COUPE CLASSIQUE - 20€</h4>
+                <p>
+                  <strong>Shampoing</strong>, <strong>coupe</strong>,
+                  <strong>coiffage</strong>.
+                </p>
+                <p><em>Durée &asymp; 45mins</em></p>
+              </li>
+              <li>
+                <h4 class="heading-h4">RASAGE DU CRANE AU COUP-CHOU - 20€</h4>
+                <p>
+                  Rasage au <strong>coupe-chou</strong>, <strong>soins</strong>.
+                </p>
+                <p><em>Durée &asymp; 45 minutes</em></p>
+              </li>
+              <li>
+                <h4 class="heading-h4">UNDERCUT - 25€</h4>
+                <p>
+                  <strong>Shampoing</strong>,
+                  <strong>dégradé à l’ancienne</strong>.
+                </p>
+                <p><em>Durée &asymp; 45 minutes.</em></p>
+              </li>
+              <li>
+                <h4 class="heading-h4">COUPE BROSSE - 35€</h4>
+                <p><strong>Coupe militaire</strong> (Flat Top).</p>
+                <p><em>Durée &asymp; 45 minutes</em></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Section Team -->
+
+      <section class="team">
+        <h2 class="section-title">
+          <span>Voice l'équipe</span>
+          <img src="ressources/pack/022-brush.svg" alt="" />
+        </h2>
+        <p class="section-subtitle">5 ans de bons et loyaux services</p>
+
+        <div class="container cards-container">
+          <div class="team-card">
+            <img
+              src="ressources/barber1.jpg"
+              alt="Photo d'un coiffeur : John"
+              class="profile-image"
+            />
+            <div class="card-content">
+              <div class="top-card-content">
+                <p class="card-name">John Scissors</p>
+                <a href="#" aria-label="S'abonner à la page instagram de John">
+                  <img src="ressources/instagram.svg" alt="" />
+                </a>
+                <a href="#" aria-label="S'abonner à la page twitter de John">
+                  <img src="ressources/twitter.svg" alt="" />
+                </a>
+              </div>
+              <p class="card-description">25 ans de savoir-faire</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <img
+              src="ressources/barber2.jpg"
+              alt="Photo d'un coiffeur : Albert"
+              class="profile-image"
+            />
+            <div class="card-content">
+              <div class="top-card-content">
+                <p class="card-name">Albert Cut</p>
+                <a href="#" aria-label="S'abonner à la page instagram d'Albert">
+                  <img src="ressources/instagram.svg" alt="" />
+                </a>
+                <a href="#" aria-label="S'abonner à la page twitter d'Albert">
+                  <img src="ressources/twitter.svg" alt="" />
+                </a>
+              </div>
+              <p class="card-description">15 ans de savoir-faire</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <img
+              src="ressources/barber3.jpg"
+              alt="Photo d'une coiffeuse : Emma"
+              class="profile-image"
+            />
+            <div class="card-content">
+              <div class="top-card-content">
+                <p class="card-name">Emma Malcoupet</p>
+                <a href="#" aria-label="S'abonner à la page instagram d'Emma">
+                  <img src="ressources/instagram.svg" alt="" />
+                </a>
+                <a href="#" aria-label="S'abonner à la page twitter d'Emma">
+                  <img src="ressources/twitter.svg" alt="" />
+                </a>
+              </div>
+              <p class="card-description">10 ans de savoir-faire</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Testimonials -->
+
+      <section class="testimonial">
+        <div class="text-slideshow-container">
+          <div class="sliding-container">
+            <div class="text-slide">
+              <p class="testimonial-text">Le meilleur barbier de Paris</p>
+              <p class="testimonial-author">John doe</p>
+            </div>
+            <div class="text-slide">
+              <p class="testimonial-text">Toujours satisfait</p>
+              <p class="testimonial-author">Bob doe</p>
+            </div>
+            <div class="text-slide">
+              <p class="testimonial-text">Rapide et efficace</p>
+              <p class="testimonial-author">Albert doe</p>
+            </div>
+            <div class="text-slide">
+              <p class="testimonial-text">Jamais déçu</p>
+              <p class="testimonial-author">Kevin doe</p>
+            </div>
+            <div class="text-slide">
+              <p class="testimonial-text">Le meilleur barbier de Paris</p>
+              <p class="testimonial-author">John doe</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Contact -->
+
+      <section class="contact" id="contact">
+        <h2 class="section-title">
+          <span>Nos adresses</span>
+          <img src="ressources/pack/003-location-pin.svg" alt="" />
+        </h2>
+        <p class="section-subtitle">
+          Nous sommes présents dans toute la capitale
+        </p>
+
+        <div class="contact-content container">
+          <div class="address">
+            <div class="address-block">
+              <p>13 Rue de la Couronne, 75554 Paris</p>
+              <p>04.42.38.42.39</p>
+              <p>Le_Barbier_Couronne</p>
+              <a
+                href="#"
+                aria-label="S'abonner à la page facebook du Barbier Couronne"
+              >
+                <img src="ressources/facebook.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                aria-label="S'abonner à la page instagram du Barbier Couronne"
+              >
+                <img src="ressources/instagram.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                aria-label="S'abonner à la page tiktok du Barbier Couronne"
+              >
+                <img src="ressources/tiktok.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                aria-label="S'abonner à la page twitter du Barbier Couronne"
+              >
+                <img src="ressources/twitter.svg" alt="" />
+              </a>
+            </div>
+            <div class="address-block">
+              <p>10 Avenue Leclerc, 75354 Paris</p>
+              <p>01.40.85.86.26</p>
+              <p>Le_Barbier_Leclerc</p>
+              <a
+                href="#"
+                aria-label="S'abonner à la page facebook du Barbier Leclerc"
+              >
+                <img src="ressources/facebook.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                aria-label="S'abonner à la page instagram du Barbier Leclerc"
+              >
+                <img src="ressources/instagram.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                aria-label="S'abonner à la page tiktok du Barbier Leclerc"
+              >
+                <img src="ressources/tiktok.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                aria-label="S'abonner à la page twitter du Barbier Leclerc"
+              >
+                <img src="ressources/twitter.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="schedule">
+            <h3 class="heading-h3">Horaires d'ouverture</h3>
+            <div class="schedule-table">
+              <p><span>Lundi</span> <span>09:00-19:00</span></p>
+              <p><span>Mardi</span> <span>09:00-19:00</span></p>
+              <p><span>Mercredi</span> <span>09:00-19:00</span></p>
+              <p><span>Jeudi</span> <span>09:00-19:00</span></p>
+              <p><span>Vendredi</span> <span>09:00-19:00</span></p>
+              <p><span>Samedi</span> <span>09:00-19:00</span></p>
+              <p><span>Dimanche</span> <span>Fermé</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="mentions.html"
+        ><span>Thème Barber - Tous droits réservés</span>
+      </a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
